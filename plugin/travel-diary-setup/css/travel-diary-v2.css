@@ -1,0 +1,41 @@
+/* TRAVEL DIARY CSS v2 */
+html{scroll-behavior:smooth;}
+body{-webkit-font-smoothing:antialiased;}
+/* Header */
+.main-header-bar{border-bottom:1px solid #e8e4da!important;box-shadow:0 2px 12px rgba(18,74,80,.06);}
+.site-title a{font-size:1.5rem;letter-spacing:.01em;}
+.main-header-menu a{letter-spacing:.02em;}
+/* Hero */
+.td-hero{min-height:380px;display:flex;flex-direction:column;justify-content:center;align-items:center;background-size:cover;background-position:center;}
+.td-hero h1{font-size:3rem;text-shadow:0 2px 14px rgba(0,0,0,.35);}
+.td-hero p{font-size:1.2rem;max-width:560px;text-shadow:0 1px 8px rgba(0,0,0,.35);}
+.td-btn{box-shadow:0 4px 14px rgba(226,109,74,.35);}
+.td-btn:hover{transform:translateY(-2px);}
+/* Cards */
+.td-section h2{font-size:1.9rem;position:relative;padding-bottom:14px;}
+.td-section h2::after{content:"";display:block;width:56px;height:3px;background:var(--td-coral);border-radius:2px;margin:12px auto 0;}
+.td-card{display:flex;flex-direction:column;box-shadow:0 4px 16px rgba(18,74,80,.08);}
+.td-card:hover{transform:translateY(-6px);box-shadow:0 14px 30px rgba(18,74,80,.16);}
+.td-card .td-img{display:block;overflow:hidden;}
+.td-card .td-img img{transition:transform .5s ease;}
+.td-card:hover .td-img img{transform:scale(1.06);}
+.td-card .td-body{display:flex;flex-direction:column;flex:1;}
+.td-card .td-cat{align-self:flex-start;background:#fdeee9;padding:3px 10px;border-radius:20px;}
+.td-card p{color:#4a5558;line-height:1.6;margin-bottom:12px;}
+.td-card .td-more{margin-top:auto;font-weight:700;color:var(--td-teal);text-decoration:none;}
+.td-card .td-more:hover{color:var(--td-coral);}
+/* Single post */
+.single-post .entry-content,.single-post .entry-header{max-width:720px;margin-left:auto;margin-right:auto;}
+.single-post .entry-content p{font-size:1.12rem;line-height:1.9;color:#2b3436;}
+.single-post .post-thumb img,.single-post .ast-single-post-featured-section img{border-radius:16px;width:100%;max-height:520px;object-fit:cover;}
+.single-post .entry-title{font-size:2.4rem;line-height:1.2;color:var(--td-dark);}
+.td-meta{color:#6b7679;font-size:.95rem;margin:0 0 18px!important;}
+.td-back{text-align:center;margin:36px 0 10px;}
+/* Archive / category pages */
+.archive .ast-article-post,.blog .ast-article-post{background:var(--td-sand);border-radius:16px;overflow:hidden;box-shadow:0 4px 16px rgba(18,74,80,.08);margin-bottom:28px;}
+.archive .page-title{color:var(--td-dark);}
+/* Footer */
+.site-footer{background:var(--td-dark);color:#cfe3e5;}
+.site-footer a{color:#fff;}
+.ast-small-footer{border-top:0!important;}
+@media(max-width:600px){.td-hero{min-height:280px}.td-hero h1{font-size:2.1rem}.single-post .entry-title{font-size:1.8rem}}

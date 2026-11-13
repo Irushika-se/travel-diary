@@ -1,0 +1,43 @@
+/* TRAVEL DIARY CSS v3 */
+.td-btn-ghost{background:transparent;border:2px solid #fff;box-shadow:none;margin-left:10px;}
+.td-btn-ghost:hover{background:#fff;color:var(--td-dark)!important;}
+.td-hero .td-btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;}
+.td-hero .td-btns .td-btn-ghost{margin-left:0;}
+/* Stats */
+.td-stats{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 48px;background:var(--td-sand);border-radius:16px;padding:26px 20px;margin:0 0 20px;text-align:center;}
+.td-stat strong{display:block;font-size:2rem;color:var(--td-teal);line-height:1.1;}
+.td-stat span{font-size:.9rem;color:#5b6568;}
+/* Category tiles */
+.td-tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;}
+.td-tile{position:relative;height:250px;border-radius:16px;overflow:hidden;background-size:cover;background-position:center;display:flex;align-items:flex-end;text-decoration:none!important;transition:transform .25s,box-shadow .25s;}
+.td-tile::before{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(10,40,44,.85),rgba(10,40,44,.05) 65%);}
+.td-tile:hover{transform:translateY(-5px);box-shadow:0 14px 30px rgba(18,74,80,.25);}
+.td-tile div{position:relative;padding:18px 22px;color:#fff;}
+.td-tile h3{color:#fff;margin:0 0 2px;font-size:1.4rem;}
+.td-tile span{font-size:.92rem;opacity:.92;}
+/* Features */
+.td-features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;}
+.td-feature{text-align:center;padding:26px 20px;border-radius:16px;background:#fff;border:1px solid #ece7da;}
+.td-feature .td-ico{width:56px;height:56px;border-radius:50%;background:#e4f1f2;display:flex;align-items:center;justify-content:center;font-size:1.6rem;margin:0 auto 14px;}
+.td-feature h3{margin:0 0 6px;color:var(--td-dark);font-size:1.15rem;}
+.td-feature p{margin:0;color:#4a5558;font-size:.95rem;line-height:1.6;}
+/* About split */
+.td-split{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center;}
+.td-split img{width:100%;border-radius:18px;box-shadow:0 10px 30px rgba(18,74,80,.15);display:block;}
+.td-split h2{text-align:left;}
+.td-split h2::after{margin-left:0;}
+.td-steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;}
+.td-step{position:relative;background:var(--td-sand);border-radius:16px;padding:26px 22px 22px;}
+.td-step::before{counter-increment:s;content:counter(s);position:absolute;top:-16px;left:20px;width:34px;height:34px;border-radius:50%;background:var(--td-coral);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;}
+.td-step h3{margin:0 0 6px;color:var(--td-dark);font-size:1.1rem;}
+.td-step p{margin:0;color:#4a5558;font-size:.95rem;line-height:1.6;}
+/* Contact */
+.td-contact-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:32px;align-items:start;}
+.td-info{background:var(--td-sand);border-radius:16px;padding:22px;margin-bottom:16px;}
+.td-info h3{margin:0 0 6px;color:var(--td-dark);font-size:1.1rem;}
+.td-info p{margin:0;color:#4a5558;line-height:1.6;font-size:.95rem;}
+.td-formbox{background:#fff;border:1px solid #ece7da;border-radius:18px;padding:26px 28px;box-shadow:0 8px 24px rgba(18,74,80,.07);}
+.td-formbox .td-form{margin:0;max-width:none;}
+.td-lead{text-align:center;max-width:640px;margin:-8px auto 28px;color:#4a5558;font-size:1.05rem;line-height:1.7;}
+@media(max-width:768px){.td-split,.td-contact-grid{grid-template-columns:1fr;}.td-split h2{text-align:center;}.td-split h2::after{margin-left:auto;}}
+.td-cta h2::after{display:none;}
