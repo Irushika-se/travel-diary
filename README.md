@@ -36,5 +36,4 @@ Only my own work is stored here, not the full WordPress install.
 ## What I learned
 Posts, categories and featured images in WordPress; writing a plugin with shortcodes, a custom post type and an activation hook; responsive CSS; and using Git and GitHub safely (secrets such as `wp-config.php` are never committed).
 
-## Credits
-Photos: Unsplash / Pexels (add photographer names here).
+
