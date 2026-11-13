@@ -2,13 +2,9 @@
 
 A responsive Sri Lanka travel blog built with WordPress and the free Astra theme. It has a photo-led Home page, About and Contact pages, six destination guides in three categories (Beaches, Mountains, Culture) and a working contact form. No page builder and no third-party plugins: all the custom work is in one small plugin and a few CSS files.
 
-## Screenshots
-Add images to `docs/screenshots/` and link them here, for example:
 
-```
-![Home](docs/screenshots/home.png)
-![Post](docs/screenshots/post.png)
-```
+
+
 
 ## Features
 - Responsive layout for desktop, tablet and phone
