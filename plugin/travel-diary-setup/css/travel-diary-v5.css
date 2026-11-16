@@ -1,0 +1,20 @@
+/* TRAVEL DIARY CSS v5 */
+/* Clearer text on banners */
+.td-banner::before{background:linear-gradient(135deg,rgba(10,45,50,.84),rgba(10,45,50,.5));}
+.td-banner p{text-shadow:0 1px 8px rgba(0,0,0,.5);}
+/* Post page: clean white page, centred reading column, no comments or author line */
+body.single-post,body.single-post.ast-separate-container{background:#fff;}
+.single-post.ast-separate-container .ast-article-single{background:transparent;box-shadow:none;max-width:820px;margin-left:auto!important;margin-right:auto!important;padding-left:0;padding-right:0;}
+.single-post .entry-meta,.single-post .comments-area,.single-post .post-thumb,.single-post .ast-single-post-featured-section{display:none!important;}
+.single-post .ast-comment-list,.single-post #respond{display:none!important;}
+.single-post .entry-title{margin-bottom:10px;}
+.td-feature-img{margin:0 0 26px;}
+.td-feature-img img{width:100%;max-height:480px;object-fit:cover;border-radius:18px;display:block;box-shadow:0 10px 30px rgba(18,74,80,.15);}
+.td-related{margin-top:56px;padding-top:36px;border-top:1px solid #e8e4da;}
+.td-related h2{text-align:center;color:var(--td-dark);margin:0 0 24px;font-size:1.6rem;}
+.td-related .td-grid{grid-template-columns:repeat(3,1fr);}
+@media(max-width:700px){.td-related .td-grid{grid-template-columns:1fr;}}
+.single-post .post-navigation{margin-top:36px;border-top:1px solid #e8e4da;padding-top:18px;}
+/* Category pages */
+.archive .page-title{font-size:2rem;color:var(--td-dark);}
+.archive .ast-archive-description{border-bottom:0;}

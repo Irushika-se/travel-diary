@@ -1,0 +1,9 @@
+wp-config.php
+*.sql
+*.log
+debug.log
+wp-content/uploads/
+wp-content/cache/
+.env
+.DS_Store
+Thumbs.db

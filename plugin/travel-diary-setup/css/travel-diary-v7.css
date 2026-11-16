@@ -1,0 +1,15 @@
+/* TRAVEL DIARY CSS v7 */
+.td-section:has(.td-cta){margin-top:80px;margin-bottom:48px;}
+.td-cta{position:relative;overflow:hidden;background-color:#124a50;background-size:cover;background-position:center;padding:96px 32px;border-radius:24px;box-shadow:0 20px 48px rgba(10,45,50,.25);}
+.td-cta::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,45,50,.92),rgba(18,74,80,.78));}
+.td-cta>*{position:relative;}
+.td-cta h2{font-size:2.3rem;letter-spacing:.01em;margin:0 0 14px;}
+.td-cta p,.entry-content .td-cta p{color:#d9ebed;font-size:1.15rem;line-height:1.7;max-width:520px;margin:0 auto 34px;}
+.td-cta .td-btn{background:#fff;color:#124a50!important;box-shadow:0 6px 20px rgba(0,0,0,.22);padding:15px 46px;font-weight:700;}
+.td-cta .td-btn:hover{background:#e26d4a;color:#fff!important;transform:translateY(-2px);}
+.td-band{padding:56px 32px;}
+.td-stats{padding:34px 24px;}
+.td-info{padding:26px 28px;}
+.td-formbox{padding:34px 36px;}
+.td-feature{padding:34px 26px;}
+@media(max-width:600px){.td-cta{padding:56px 22px}.td-band{padding:36px 18px}.td-formbox{padding:24px 20px}}

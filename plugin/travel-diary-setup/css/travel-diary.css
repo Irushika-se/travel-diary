@@ -1,0 +1,24 @@
+/* TRAVEL DIARY CSS */
+:root{--td-teal:#1f6f78;--td-dark:#124a50;--td-sand:#fbf6ec;--td-coral:#e26d4a;}
+.site-title a,.main-header-menu a{color:var(--td-dark)!important;font-weight:600;}
+.main-header-menu .current-menu-item>a,.main-header-menu a:hover{color:var(--td-coral)!important;}
+.td-hero{background:linear-gradient(135deg,#1f6f78,#3a9aa3);color:#fff;text-align:center;padding:90px 24px;border-radius:18px;margin-bottom:40px;}
+.td-hero h1{color:#fff;font-size:2.6rem;margin:0 0 12px;}
+.td-hero p{font-size:1.15rem;margin:0 0 24px;opacity:.95;}
+.td-btn{display:inline-block;background:var(--td-coral);color:#fff!important;padding:12px 30px;border-radius:30px;font-weight:600;text-decoration:none;transition:background .2s;}
+.td-btn:hover{background:#c4532f;}
+.td-section{margin:48px 0;}
+.td-section h2{text-align:center;color:var(--td-dark);margin-bottom:24px;}
+.td-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;}
+.td-card{background:var(--td-sand);border-radius:16px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.07);transition:transform .2s;}
+.td-card:hover{transform:translateY(-4px);}
+.td-card img{width:100%;display:block;aspect-ratio:3/2;object-fit:cover;}
+.td-card .td-body{padding:16px 20px 20px;}
+.td-card .td-cat{font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--td-coral);}
+.td-card h3{margin:6px 0;font-size:1.2rem;}
+.td-card h3 a{color:var(--td-dark);text-decoration:none;}
+.td-card p{margin:0;font-size:.95rem;}
+.td-cta{background:var(--td-teal);color:#fff;text-align:center;padding:48px 24px;border-radius:18px;}
+.td-cta h2{color:#fff;margin-top:0;}
+.entry-content p{line-height:1.8;}
+@media(max-width:600px){.td-hero{padding:56px 18px}.td-hero h1{font-size:1.9rem}}

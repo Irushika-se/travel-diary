@@ -1,0 +1,14 @@
+/* TRAVEL DIARY CSS v4 */
+.td-btn,.td-btn:hover,.td-card h3 a,.td-card .td-more,.td-tile,.td-tile:hover{text-decoration:none!important;}
+.td-grid{grid-template-columns:repeat(3,1fr);}
+@media(max-width:900px){.td-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:560px){.td-grid{grid-template-columns:1fr;}}
+.td-banner{position:relative;min-height:230px;border-radius:18px;background-color:#1f6f78;background-size:cover;background-position:center;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px 20px;margin-bottom:40px;color:#fff;overflow:hidden;}
+.td-banner::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(18,74,80,.72),rgba(18,74,80,.35));}
+.td-banner>*{position:relative;}
+.td-banner h1{color:#fff;font-size:2.5rem;margin:0 0 10px;text-shadow:0 2px 12px rgba(0,0,0,.35);}
+.td-banner p{margin:0;max-width:560px;font-size:1.1rem;line-height:1.6;opacity:.96;}
+.td-band{background:var(--td-sand);border-radius:18px;padding:40px 24px;margin:48px 0;}
+.td-band .td-feature{background:#fff;}
+.td-tile{background-color:#2f6f6a;}
+@media(max-width:600px){.td-banner{min-height:180px}.td-banner h1{font-size:1.9rem}}
